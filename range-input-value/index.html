@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="keywords" content="app, landing, corporate, Creative, Html Template, Template">
+    <meta name="author" content="web-themes">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- title -->
+    <title>Range Input Value Change</title>
+
+    <!-- favicon -->
+    <!-- <link href="img/favicon.png" type="image/png" rel="icon"> -->
+
+    <!-- all css here -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+  
+
+    <div class="wrapper">
+        <div>
+            <div class="value">0</div>
+            <input type="range" min="0" max="10" step="1" value="0">
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        
+        var rangeBox = document.querySelector('input[type="range"]');
+
+        var rangeValue = function() {
+            var newValue = rangeBox.value;
+            var target = document.querySelector('.value');
+            target.innerHTML = newValue;
+        }
+
+        rangeBox.addEventListener("input", rangeValue);
+
+    </script>
+</body>
+</html>

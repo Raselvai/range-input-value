@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+	box-sizing: border-box;
+}
+
+button:focus, input:focus, textarea:focus {
+	outline: 0;
+}
+
+body {
+   background: #000000;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.wrapper .value {
+	border-bottom: 4px dashed #ffffff;
+	text-align: center;
+	font-weight: bold;
+	font-size: 90px;
+	width: 300px;
+	color: #ffffff;
+	height: 150px;
+	margin-bottom: 30px;
+}
+
+.wrapper input[type="range"] {
+    display: block;
+    -webkit-appearance: none;
+    background-color: #ffffff;
+    width: 300px;
+    height: 3px;
+    border-radius: 5px;
+    outline: 0;
+}
+
+.wrapper input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	background-color: #ffffff;
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	border: 2px solid #ffffff;
+	cursor: pointer;
+	transition: 0.3s all ease-in-out;
+}
+
+.wrapper input[type="range"]::-webkit-slider-thumb:hover {
+	background-color: #ffffff;
+	border: 2px solid #ffffff;
+}
+
+.wrapper input[type="range"]::-webkit-slider-thumb:active {
+	transform: scale(1.6);
+}
